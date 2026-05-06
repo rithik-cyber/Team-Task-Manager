@@ -1,16 +1,187 @@
-# React + Vite
+# Team Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern full stack Team Task Management application built using React, Node.js, Express, and MongoDB.
 
-Currently, two official plugins are available:
+This project allows users to create projects, manage tasks, monitor progress, and visualize task statistics through a responsive dashboard interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Frontend
+https://team-task-manager-seven-dun.vercel.app/
 
-## Expanding the ESLint configuration
+## Backend API
+https://team-task-manager-backend-mvas.onrender.com/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# Features
+
+- JWT Authentication
+- Create and manage projects
+- Create and manage tasks
+- Task priority management
+- Dashboard statistics
+- Responsive UI
+- REST API integration
+- MongoDB Atlas database
+- Full stack deployment
+
+---
+
+# Tech Stack
+
+## Frontend
+- React.js
+- Vite
+- Axios
+- Tailwind CSS
+
+## Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT Authentication
+- bcryptjs
+
+---
+
+# Folder Structure
+
+```bash
+Team-Task-Manager/
+│
+├── client/        # React Frontend
+├── server/        # Express Backend
+└── README.md
+```
+
+---
+
+# API Endpoints
+
+## Authentication
+
+### Signup
+```http
+POST /api/auth/signup
+```
+
+### Login
+```http
+POST /api/auth/login
+```
+
+---
+
+## Projects
+
+### Create Project
+```http
+POST /api/projects
+```
+
+---
+
+## Tasks
+
+### Create Task
+```http
+POST /api/tasks
+```
+
+---
+
+# Local Setup
+
+## Clone Repository
+
+```bash
+git clone https://github.com/rithik-cyber/Team-Task-Manager.git
+```
+
+---
+
+# Backend Setup
+
+```bash
+cd server
+npm install
+npm run dev
+```
+
+Create `.env` file inside `server` folder:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=supersecretkey
+```
+
+---
+
+# Frontend Setup
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+---
+
+# Deployment
+
+## Frontend Deployment
+- Vercel
+
+## Backend Deployment
+- Render
+
+---
+# Screenshots
+## Full Dashboard
+
+![Full Dashboard](./screenshots/full-dashboard.png)
+
+---
+
+## Create Task
+
+![Create Task](./screenshots/create-task.png)
+
+---
+
+# Dashboard Features
+
+- Total Tasks Counter
+- Completed Tasks Counter
+- In Progress Tasks Counter
+- Pending Tasks Counter
+
+---
+
+# Future Improvements
+
+- User role management
+- Real-time collaboration
+- Task deadlines
+- Drag and drop task boards
+- Notifications system
+
+---
+
+# Author
+
+## Rithik Kumar
+
+GitHub:
+https://github.com/rithik-cyber
+
+---
+
+# License
+
+This project is created for educational and assignment purposes.

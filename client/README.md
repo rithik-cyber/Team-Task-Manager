@@ -2,8 +2,6 @@
 
 A modern full stack Team Task Management application built using React, Node.js, Express, and MongoDB.
 
-This project allows users to create projects, manage tasks, monitor progress, and visualize task statistics through a responsive dashboard interface.
-
 ---
 
 # Live Demo
@@ -21,8 +19,8 @@ https://team-task-manager-backend-mvas.onrender.com/
 - JWT Authentication
 - Create and manage projects
 - Create and manage tasks
-- Task priority management
 - Dashboard statistics
+- Task priority management
 - Responsive UI
 - REST API integration
 - MongoDB Atlas database
@@ -53,8 +51,8 @@ https://team-task-manager-backend-mvas.onrender.com/
 ```bash
 Team-Task-Manager/
 │
-├── client/        # React Frontend
-├── server/        # Express Backend
+├── client/
+├── server/
 └── README.md
 ```
 
@@ -65,11 +63,13 @@ Team-Task-Manager/
 ## Authentication
 
 ### Signup
+
 ```http
 POST /api/auth/signup
 ```
 
 ### Login
+
 ```http
 POST /api/auth/login
 ```
@@ -79,6 +79,7 @@ POST /api/auth/login
 ## Projects
 
 ### Create Project
+
 ```http
 POST /api/projects
 ```
@@ -88,6 +89,7 @@ POST /api/projects
 ## Tasks
 
 ### Create Task
+
 ```http
 POST /api/tasks
 ```
@@ -134,23 +136,11 @@ npm run dev
 
 # Deployment
 
-## Frontend Deployment
+## Frontend
 - Vercel
 
-## Backend Deployment
+## Backend
 - Render
-
----
-# Screenshots
-## Full Dashboard
-
-![Full Dashboard](./screenshots/full-dashboard.png)
-
----
-
-## Create Task
-
-![Create Task](./screenshots/create-task.png)
 
 ---
 
@@ -163,12 +153,25 @@ npm run dev
 
 ---
 
+# Screenshots
+
+## Full Dashboard
+
+![Full Dashboard](./screenshots/full-dashboard.png)
+
+---
+
+## Create Task
+
+![Create Task](./screenshots/create-task.png)
+
+---
+
 # Future Improvements
 
 - User role management
 - Real-time collaboration
 - Task deadlines
-- Drag and drop task boards
 - Notifications system
 
 ---
@@ -179,9 +182,3 @@ npm run dev
 
 GitHub:
 https://github.com/rithik-cyber
-
----
-
-# License
-
-This project is created for educational and assignment purposes.
